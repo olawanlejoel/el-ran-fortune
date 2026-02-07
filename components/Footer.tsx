@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="flex flex-row flex-wrap gap-8 md:gap-20">
                 {/* Navigation */}
                 <div>
-                  <h4 className="font-bold text-secondary mb-6 text-base">Navigation</h4>
+                  <h4 className="font-bold text-secondary mb-6 text-base">Quick Links</h4>
                   <ul className="space-y-3 text-secondary/70 font-medium text-sm">
                     <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
                     <li><Link href="#" className="hover:text-primary transition-colors">About</Link></li>

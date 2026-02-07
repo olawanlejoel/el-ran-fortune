@@ -30,9 +30,9 @@ export default function Home() {
           <Commitment />
         </ScrollReveal>
 
-        <ScrollReveal>
+        {/* <ScrollReveal>
           <Books />
-        </ScrollReveal>
+        </ScrollReveal> */}
         
         <ScrollReveal>
           <FeaturedBooks />

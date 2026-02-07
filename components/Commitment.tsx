@@ -2,6 +2,7 @@ import React from 'react';
 
 const Commitment = () => {
   return (
+    <>
     <section className="w-full py-20 bg-background text-center">
       <div className="max-w-[1200px] mx-auto px-6 md:px-16 flex flex-col items-center">
         
@@ -24,6 +25,10 @@ const Commitment = () => {
 
       </div>
     </section>
+    
+    {/* Thick Bottom Border Line */}
+    <div className="w-full h-20 bg-[#3F2139E5]"></div>
+    </>
   );
 };
 
