@@ -31,8 +31,8 @@ const Footer = () => {
                   <h4 className="font-bold text-secondary mb-6 text-base">Quick Links</h4>
                   <ul className="space-y-3 text-secondary/70 font-medium text-sm">
                     <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
-                    <li><Link href="#" className="hover:text-primary transition-colors">About</Link></li>
-                    <li><Link href="#" className="hover:text-primary transition-colors">Books</Link></li>
+                    <li><Link href="/about" className="hover:text-primary transition-colors">About</Link></li>
+                    <li><Link href="/books" className="hover:text-primary transition-colors">Books</Link></li>
                     <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
                   </ul>
                 </div>
@@ -44,7 +44,6 @@ const Footer = () => {
                     <li><a href="#" className="hover:text-primary transition-colors">Facebook</a></li>
                     <li><a href="#" className="hover:text-primary transition-colors">Instagram</a></li>
                     <li><a href="#" className="hover:text-primary transition-colors">LinkedIn</a></li>
-                    <li><a href="#" className="hover:text-primary transition-colors">Twitter (X)</a></li>
                   </ul>
                 </div>
                 
@@ -73,7 +72,7 @@ const Footer = () => {
         
         {/* Divider & Copyright */}
         <div className="max-w-[1400px] mx-auto border-t border-[#81727E] pt-8 text-center text-sm text-secondary/60">
-            © {new Date().getFullYear()} EL-RAN Transformational Rendezvous. All rights reserved. Privacy Policy | Terms of Use
+            © {new Date().getFullYear()} EL-RAN Transformational Rendezvous. All rights reserved.
         </div>
       </div>
     </footer>

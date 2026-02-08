@@ -1,9 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Banner = () => {
+interface BannerProps {
+  bgColor?: string;
+}
+
+const Banner = ({ bgColor = 'bg-white' }: BannerProps) => {
   return (
-    <section className="w-full pt-32 md:pt-52 pb-12 md:pb-20 bg-white flex justify-center px-6 md:px-16 overflow-visible">
+    <section className={`w-full pt-32 md:pt-52 pb-12 md:pb-20 ${bgColor} flex justify-center px-6 md:px-16 overflow-visible`}>
       <div className="w-full max-w-[1200px] bg-primary rounded-[2rem] md:rounded-[3rem] text-white relative flex flex-col md:flex-row items-center md:justify-between px-6 md:px-16 py-8 md:py-16 shadow-2xl">
         
         {/* Left Content */}

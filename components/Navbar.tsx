@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="hidden md:flex gap-12 items-center font-medium text-[14px]">
           <NavLink href="/" text="Home" isActive={router.pathname === '/'} />
           <NavLink href="/about" text="About" isActive={router.pathname === '/about'} />
-          <NavLink href="#" text="Books" />
+          <NavLink href="/books" text="Books" isActive={router.pathname === '/books'} />
           <NavLink href="/contact" text="Contact" isActive={router.pathname === '/contact'} />
         </div>
 
@@ -112,7 +112,7 @@ const Navbar = () => {
                     {[
                         { name: 'Home', href: '/' },
                         { name: 'About', href: '/about' },
-                        { name: 'Books', href: '#' },
+                        { name: 'Books', href: '/books' },
                         { name: 'Contact', href: '/contact' }
                     ].map((item, index) => (
                         <motion.div

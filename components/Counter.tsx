@@ -31,5 +31,5 @@ export default function Counter({ value, direction = "up" }: CounterProps) {
     });
   }, [springValue]);
 
-  return <span ref={ref} />;
+  return <span ref={ref}>0</span>;
 }

@@ -25,13 +25,13 @@ export default function Home() {
         <meta property="og:description" content="Steward your growth with integrity, intention, and faith. Explore transformational resources for purpose-driven living." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="" />
-        {/* <meta property="og:image" content="/images/og-image.png" /> */}
+        <meta property="og:image" content="/images/og-image.png" />
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="EL-RAN Transformational Rendezvous" />
         <meta name="twitter:description" content="Faith-driven growth for intentional living. Explore our library and transformational resources." />
-        {/* <meta name="twitter:image" content="/images/og-image.png" /> */}
+        <meta name="twitter:image" content="/images/og-image.png" />
         
         {/* Additional SEO */}
         <meta name="author" content="Ransom John" />

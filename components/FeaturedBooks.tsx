@@ -9,12 +9,12 @@ const books = [
   },
   {
     title: "Love Revived",
-    author: "Ransom John Usoko",
+    author: "Ransom John & Esther Ransom",
     image: "/images/love-revived-cover-image.png",
   },
   {
     title: "Reawakened by Fire",
-    author: "Ransom John Usoko",
+    author: "John & Esther Ransom",
     image: "/images/reawakened-by-fire.png",
   },
   {
@@ -101,7 +101,7 @@ const FeaturedBooks = () => {
                   </p>
                   
                   <a 
-                    href={`https://wa.me/2348032388802?text=${encodeURIComponent(`Hello Mr. Ransom, I want to get your book "${book.title}". Please let me know how to proceed.`)}`}
+                    href={`https://wa.me/2348032388802?text=${encodeURIComponent(`Hello Mr. Ransom John, I want to get your book "${book.title}". Please let me know how to proceed.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-2.5 bg-primary text-white rounded-xl font-semibold text-sm hover:opacity-90 transition-all shadow-md active:scale-95 block text-center"

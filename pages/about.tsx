@@ -11,6 +11,11 @@ export default function About() {
           name="description"
           content="Learn more about EL-RAN Transformational Rendezvous and our mission to steward growth with integrity, intention, and faith."
         />
+        <meta property="og:title" content="About Us | EL-RAN Transformational Rendezvous" />
+        <meta property="og:description" content="Learn more about EL-RAN Transformational Rendezvous and our mission to steward growth with integrity, intention, and faith." />
+        <meta property="og:image" content="/images/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/images/og-image.png" />
       </Head>
 
       <main className="w-full min-h-screen">

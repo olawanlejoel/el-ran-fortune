@@ -11,19 +11,17 @@ const reviews = [
   },
   {
     id: 2,
-    text: "This book reshaped my understanding of love and relationships, revealing God’s way as the best and most fulfilling path. Through practical wisdom on sacrifice, discipline, and intentional living, it challenged misconceptions and offered clarity that deeply transformed my perspective.",
-    name: "Oyekunle Isreal Phillian",
-    image: "/images/oyekunle-isreal.jpg",
-  },
-  {
-    id: 3,
-    text: "This book reshaped my understanding of love and relationships, revealing God’s way as the best and most fulfilling path. Through practical wisdom on sacrifice, discipline, and intentional living, it challenged misconceptions and offered clarity that deeply transformed my perspective.",
-    name: "Oyekunle Isreal Phillian",
-    image: "/images/oyekunle-isreal.jpg",
+    text: "I would start by saying that I am not really good at reading non academic books apart from novels, but Reawakened by Fire had me hooked because it answered the questions I had. The book has the breath of the Holy Spirit in it and I recommend it to anyone who like me is tired of the status quo and would love to ignite and sustain the fire of God.",
+    name: "Anonymous",
+    image: "/images/anonymous-user.png",
   },
 ];
 
-const BookReviews = () => {
+interface BookReviewsProps {
+  bgColor?: string;
+}
+
+const BookReviews = ({ bgColor = 'bg-background' }: BookReviewsProps) => {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -35,7 +33,7 @@ const BookReviews = () => {
   };
 
   return (
-    <section className="w-full py-24 bg-background relative overflow-hidden">
+    <section className={`w-full py-24 ${bgColor} relative overflow-hidden`}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-16 relative">
         
         {/* Heading */}
@@ -50,7 +48,7 @@ const BookReviews = () => {
         </motion.h2>
 
         {/* Carousel Container */}
-        <div className="relative max-w-4xl mx-auto min-h-[400px]">
+        <div className="relative max-w-4xl mx-auto min-h-[450px]">
             
             {/* Quote Icon */}
             <div className="flex justify-center mb-8">
@@ -63,7 +61,7 @@ const BookReviews = () => {
             </div>
 
             {/* Review Content with Animation */}
-            <div className="relative h-[300px] overflow-visible">
+            <div className="relative h-[340px] overflow-visible">
                 <AnimatePresence mode='wait'>
                     <motion.div 
                         key={current}
