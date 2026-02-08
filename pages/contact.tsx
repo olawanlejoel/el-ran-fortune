@@ -1,6 +1,46 @@
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const { name, email, subject, message } = formData;
+    const whatsappNumber = "2348032388802";
+    
+    const whatsappMessage = encodeURIComponent(
+      `*Contact Form Inquiry*\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n\n*Message:*\n${message}`
+    );
+    
+    // Show confirmation first
+    setIsSubmitted(true);
+    
+    // Then open WhatsApp
+    setTimeout(() => {
+      window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
+    }, 100);
+  };
+
+  const handleReset = () => {
+    setIsSubmitted(false);
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  };
+
   return (
     <>
       <Head>
@@ -44,20 +84,48 @@ export default function Contact() {
         {/* Form Section - White Card on #FCFAFF (or overlapping) */}
         <div className="w-full px-6 md:px-16 pb-20">
           <div className="max-w-[900px] mx-auto bg-white rounded-3xl p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-secondary font-bricolage mb-2">
-              Send us a Message
-            </h2>
-            <p className="text-gray-500 text-sm mb-8">
-              Use the form below to get in touch. All information are strictly confidential
-            </p>
+            
+            {isSubmitted ? (
+              // Success Confirmation
+              <div className="text-center py-12">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-secondary font-bricolage mb-4">
+                  Message Ready!
+                </h2>
+                <p className="text-gray-500 text-base mb-8 max-w-md mx-auto">
+                  WhatsApp should open with your message. Please send it to complete your inquiry.
+                </p>
+                <button
+                  onClick={handleReset}
+                  className="px-6 py-2.5 bg-primary text-white rounded-xl font-medium text-sm hover:opacity-90 transition-all shadow-md hover:shadow-lg"
+                >
+                  Send Another Message
+                </button>
+              </div>
+            ) : (
+              // Form
+              <>
+                <h2 className="text-2xl md:text-3xl font-bold text-secondary font-bricolage mb-2">
+                  Send us a Message
+                </h2>
+                <p className="text-gray-500 text-sm mb-8">
+                  Use the form below to get in touch. All information are strictly confidential
+                </p>
 
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-secondary mb-2">Full name</label>
                   <input
                     type="text"
                     id="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                     className="w-full bg-[#FAFAFA] px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-primary/20 transition-all text-secondary"
                     placeholder=""
                   />
@@ -67,6 +135,9 @@ export default function Contact() {
                   <input
                     type="email"
                     id="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     className="w-full bg-[#FAFAFA] px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-primary/20 transition-all text-secondary"
                     placeholder=""
                   />
@@ -78,6 +149,9 @@ export default function Contact() {
                 <input
                   type="text"
                   id="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
                   className="w-full bg-[#FAFAFA] px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-primary/20 transition-all text-secondary"
                   placeholder=""
                 />
@@ -88,15 +162,23 @@ export default function Contact() {
                 <textarea
                   id="message"
                   rows={6}
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                   className="w-full bg-[#FAFAFA] px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-primary/20 transition-all text-secondary resize-none"
                   placeholder=""
                 ></textarea>
               </div>
 
-              <button className="px-6 py-2.5 bg-primary text-white rounded-xl font-medium text-sm hover:opacity-90 transition-all shadow-md hover:shadow-lg">
+              <button 
+                type="submit"
+                className="px-6 py-2.5 bg-primary text-white rounded-xl font-medium text-sm hover:opacity-90 transition-all shadow-md hover:shadow-lg"
+              >
                 Send Message
               </button>
             </form>
+              </>
+            )}
           </div>
 
         </div>

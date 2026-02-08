@@ -41,9 +41,9 @@ const Footer = () => {
                 <div>
                   <h4 className="font-bold text-secondary mb-6 text-base">Socials</h4>
                   <ul className="space-y-3 text-secondary/70 font-medium text-sm">
-                    <li><a href="#" className="hover:text-primary transition-colors">Facebook</a></li>
-                    <li><a href="#" className="hover:text-primary transition-colors">Instagram</a></li>
-                    <li><a href="#" className="hover:text-primary transition-colors">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/share/174rQFmp64/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/juniorransom" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a></li>
+                    <li><a href="https://x.com/preciousgift24" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Twitter (X)</a></li>
                   </ul>
                 </div>
                 
