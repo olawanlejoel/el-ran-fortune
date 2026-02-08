@@ -3,7 +3,10 @@ import Image from 'next/image';
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { useRouter } from 'next/router';
+
 const Navbar = () => {
+  const router = useRouter();
   const [isVisible, setIsVisible] = React.useState(true);
   const [lastScrollY, setLastScrollY] = React.useState(0);
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -67,10 +70,10 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-12 items-center font-medium text-[14px]">
-          <NavLink href="/" text="Home" isActive={true} />
-          <NavLink href="#" text="About" />
+          <NavLink href="/" text="Home" isActive={router.pathname === '/'} />
+          <NavLink href="/about" text="About" isActive={router.pathname === '/about'} />
           <NavLink href="#" text="Books" />
-          <NavLink href="/contact" text="Contact" />
+          <NavLink href="/contact" text="Contact" isActive={router.pathname === '/contact'} />
         </div>
 
         {/* Desktop Button */}
@@ -106,20 +109,29 @@ const Navbar = () => {
                 className="fixed inset-0 top-[70px] z-40 bg-white/95 backdrop-blur-xl md:hidden flex flex-col items-center pt-10 px-6 h-[calc(100vh-70px)]"
             >
                 <div className="flex flex-col gap-6 w-full items-center mt-10">
-                    {['Home', 'About', 'Books', 'Contact'].map((item, index) => (
+                    {[
+                        { name: 'Home', href: '/' },
+                        { name: 'About', href: '/about' },
+                        { name: 'Books', href: '#' },
+                        { name: 'Contact', href: '/contact' }
+                    ].map((item, index) => (
                         <motion.div
-                            key={item}
+                            key={item.name}
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                             className="w-full text-center"
                         >
                             <Link 
-                                href="#" 
-                                className="text-lg font-medium text-secondary/80 block py-2 hover:text-primary transition-colors"
+                                href={item.href} 
+                                className={`text-lg font-medium block py-2 transition-colors ${
+                                    router.pathname === item.href 
+                                    ? 'text-primary font-bold' 
+                                    : 'text-secondary/80 hover:text-primary'
+                                }`}
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                {item}
+                                {item.name}
                             </Link>
                         </motion.div>
                     ))}

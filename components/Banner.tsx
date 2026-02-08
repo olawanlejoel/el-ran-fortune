@@ -1,8 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Banner = () => {
   return (
-    <section className="w-full pt-20 md:pt-40 pb-12 md:pb-20 bg-background flex justify-center px-6 md:px-16 overflow-visible">
+    <section className="w-full pt-32 md:pt-52 pb-12 md:pb-20 bg-white flex justify-center px-6 md:px-16 overflow-visible">
       <div className="w-full max-w-[1200px] bg-primary rounded-[2rem] md:rounded-[3rem] text-white relative flex flex-col md:flex-row items-center md:justify-between px-6 md:px-16 py-8 md:py-16 shadow-2xl">
         
         {/* Left Content */}
@@ -13,9 +14,11 @@ const Banner = () => {
             <p className="text-white/80 text-base md:text-xl mb-8 leading-relaxed max-w-lg">
                 Join 100+ people on a journey of purpose, growth, and transformation.
             </p>
-            <button className="bg-[#F3EBFF] text-primary px-6 py-2.5 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow-lg">
-                Contact Me
-            </button>
+            <Link href="/contact">
+              <button className="bg-[#F3EBFF] text-primary px-6 py-2.5 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow-lg">
+                  Contact Me
+              </button>
+            </Link>
         </div>
 
         {/* Right Image - Shoots Out */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Counter from "@/components/Counter";
 
 const About = () => {
@@ -63,9 +64,11 @@ const About = () => {
             </div>
           </div>
 
-          <button className="px-6 py-2.5 bg-primary text-white rounded-xl font-medium text-sm hover:opacity-90 transition-all shadow-md hover:shadow-lg">
-            Read More
-          </button>
+          <Link href="/about">
+            <button className="px-6 py-2.5 bg-primary text-white rounded-xl font-medium text-sm hover:opacity-90 transition-all shadow-md hover:shadow-lg">
+              Read More
+            </button>
+          </Link>
         </div>
 
       </div>
