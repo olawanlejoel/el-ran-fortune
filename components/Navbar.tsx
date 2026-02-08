@@ -67,17 +67,19 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-12 items-center font-medium text-[14px]">
-          <NavLink href="#" text="Home" isActive={true} />
+          <NavLink href="/" text="Home" isActive={true} />
           <NavLink href="#" text="About" />
           <NavLink href="#" text="Books" />
-          <NavLink href="#" text="Contact" />
+          <NavLink href="/contact" text="Contact" />
         </div>
 
         {/* Desktop Button */}
         <div className="hidden md:block">
+          <Link href="/contact">
             <button className="bg-primary text-white px-6 py-2.5 rounded-xl font-medium text-sm hover:opacity-90 transition-opacity shadow-sm">
             Get in touch
             </button>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Button */}

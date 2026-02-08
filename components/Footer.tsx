@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             
             {/* Right Side: Links (Navigation, Socials, Contact) */}
-            <div className="flex flex-row flex-wrap gap-8 md:gap-20">
+            <div className="w-full md:w-auto grid grid-cols-2 md:flex md:flex-row gap-y-10 gap-x-4 md:gap-20">
                 {/* Navigation */}
                 <div>
                   <h4 className="font-bold text-secondary mb-6 text-base">Quick Links</h4>
@@ -33,7 +33,7 @@ const Footer = () => {
                     <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
                     <li><Link href="#" className="hover:text-primary transition-colors">About</Link></li>
                     <li><Link href="#" className="hover:text-primary transition-colors">Books</Link></li>
-                    <li><Link href="#" className="hover:text-primary transition-colors">Contact</Link></li>
+                    <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
                   </ul>
                 </div>
                 
