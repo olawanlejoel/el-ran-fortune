@@ -32,7 +32,7 @@ const Books = () => {
              {/* Book 1: Know When to Say No - Furthest Left */}
              <div className="absolute left-0 md:left-0 bottom-0 w-[160px] md:w-[220px] z-10 transform -rotate-12 origin-bottom-right">
                 <img 
-                    src="/images/know-when-to-say-no-book-ransom-john.png" 
+                    src="/images/know-when-to-say-no-book-ransom-john.webp" 
                     alt="Know When to Say No" 
                     className="w-full h-auto"
                 />
@@ -41,7 +41,7 @@ const Books = () => {
              {/* Book 2: Love Revived - Overlapping Next */}
              <div className="absolute left-[20%] md:left-[22%] bottom-6 w-[170px] md:w-[240px] z-20 transform -rotate-6 origin-bottom-right">
                 <img 
-                    src="/images/love-revived-book-ransom-john.png" 
+                    src="/images/love-revived-book-ransom-john.webp" 
                     alt="Love Revived" 
                     className="w-full h-auto"
                 />
@@ -50,7 +50,7 @@ const Books = () => {
              {/* Book 3: Chalkboard to Checkbook - Visible Middle-Right */}
              <div className="absolute left-[42%] md:left-[45%] bottom-10 w-[180px] md:w-[260px] z-30 transform rotate-2 origin-bottom-left">
                 <img 
-                    src="/images/chalkboard-to-checkbook-ransom-john.png" 
+                    src="/images/chalkboard-to-checkbook-ransom-john.webp" 
                     alt="Chalkboard to Checkbook" 
                     className="w-full h-auto"
                 />
@@ -59,7 +59,7 @@ const Books = () => {
              {/* Book 4: Reawakened by Fire - Front Right, Largest */}
              <div className="absolute right-0 md:right-[2%] bottom-16 w-[200px] md:w-[300px] z-40 transform rotate-12 origin-bottom-left">
                 <img 
-                    src="/images/reawaked-by-fire-ransom-john.png" 
+                    src="/images/reawaked-by-fire-ransom-john.webp" 
                     alt="Reawakened by Fire" 
                     className="w-full h-auto"
                 />

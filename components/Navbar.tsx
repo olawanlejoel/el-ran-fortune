@@ -58,7 +58,7 @@ const Navbar = () => {
       <div className="max-w-[1400px] mx-auto px-6 md:px-16 flex justify-between items-center relative z-50">
         <Link href="/" className="flex items-center gap-2">
           <Image 
-            src="/images/logo.png" 
+            src="/images/logo.webp" 
             alt="El-Ran Logo" 
             width={100} 
             height={32} 

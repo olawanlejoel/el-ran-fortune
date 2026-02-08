@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="flex flex-col items-start gap-4 max-w-sm">
                <div className="flex items-center gap-2 mb-2">
                     <img 
-                        src="/images/logo.png" 
+                        src="/images/logo.webp" 
                         alt="El-Ran Logo" 
                         className="h-12 w-auto object-contain"
                     />

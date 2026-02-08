@@ -5,22 +5,22 @@ const books = [
   {
     title: "Chalkboard to Checkbook",
     author: "Ransom John Usoko",
-    image: "/images/chalkboard-to-checkbook-cover.png",
+    image: "/images/chalkboard-to-checkbook-cover.webp",
   },
   {
     title: "Love Revived",
     author: "Ransom John & Esther Ransom",
-    image: "/images/love-revived-cover-image.png",
+    image: "/images/love-revived-cover-image.webp",
   },
   {
     title: "Reawakened by Fire",
     author: "John & Esther Ransom",
-    image: "/images/reawakened-by-fire.png",
+    image: "/images/reawakened-by-fire.webp",
   },
   {
     title: "Know When to Say Know",
     author: "Ransom John Usoko",
-    image: "/images/know-when-to-say-know-book-cover.png",
+    image: "/images/know-when-to-say-know-book-cover.webp",
   },
 ];
 

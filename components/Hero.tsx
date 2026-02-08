@@ -45,7 +45,7 @@ const Hero = () => {
          {/* Main Hero Image */}
          <div className="relative w-full h-full flex items-center justify-center md:justify-end">
              <img 
-                src="/images/ransom-john-hero.png" 
+                src="/images/ransom-john-hero.webp" 
                 alt="Ransom John" 
                 className="object-contain h-full w-auto drop-shadow-2xl z-10"
              />

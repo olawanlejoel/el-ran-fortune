@@ -9,7 +9,7 @@ const Commitment = () => {
         {/* Icon Container */}
         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-8">
             <img 
-                src="/images/emojione-monotone_handshake.png" 
+                src="/images/emojione-monotone_handshake.webp" 
                 alt="Handshake Icon" 
                 className="w-10 h-10 object-contain text-primary" 
             />

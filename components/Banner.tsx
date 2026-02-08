@@ -29,7 +29,7 @@ const Banner = ({ bgColor = 'bg-white' }: BannerProps) => {
         <div className="absolute bottom-0 right-0 md:right-10 w-[90%] md:w-[450px] pointer-events-none hidden md:block">
             {/* The image is allowed to overflow the container upwards */}
              <img 
-                src="/images/ransom-john-siting.png" 
+                src="/images/ransom-john-siting.webp" 
                 alt="Ransom John Sitting" 
                 className="w-full h-auto object-contain object-bottom scale-[1.35] origin-bottom" 
             />

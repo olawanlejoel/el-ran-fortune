@@ -12,32 +12,32 @@ const booksData = [
     title: "Know When to Say No",
     author: "Ransom John Usoko",
     description: "A Flag Down on Relationship Red Flags offers an insightful exploration of relationships, providing readers with the tools to navigate the complexities of love and companionship.",
-    mockupImage: "/images/know-when-to-say-no-mockup.png",
-    coverImage: "/images/know-when-to-say-know-book-cover.png",
+    mockupImage: "/images/know-when-to-say-no-mockup.webp",
+    coverImage: "/images/know-when-to-say-know-book-cover.webp",
   },
   {
     id: 2,
     title: "Love Revived",
     author: "John & Esther Ransom",
     description: "Love Revived offers readers a transformative journey through the complexities of romantic relationships. Each chapter presents profound stories and practical strategies designed to rekindle passion and intimacy.",
-    mockupImage: "/images/love-revived-mockup.png",
-    coverImage: "/images/love-revived-cover-image.png",
+    mockupImage: "/images/love-revived-mockup.webp",
+    coverImage: "/images/love-revived-cover-image.webp",
   },
   {
     id: 3,
     title: "Chalkboard to Checkbook",
     author: "Ransom John Usoko",
     description: "Chalkboard to Checkbook is a powerful wakeup call and heartfelt companion for every teacher who's ever felt trapped by the limits of the paycheck but driven by an unshakable passion to educate and inspire lives.",
-    mockupImage: "/images/chalkboard-to-checkbook-mockup.png",
-    coverImage: "/images/chalkboard-to-checkbook-cover.png",
+    mockupImage: "/images/chalkboard-to-checkbook-mockup.webp",
+    coverImage: "/images/chalkboard-to-checkbook-cover.webp",
   },
   {
     id: 4,
     title: "Reawakened by Fire",
     author: "Ransom John Usoko",
     description: "Reawakened by Fire is a profound and timely guide for anyone seeking to ignite and sustain the powerful presence of the Holy Spirit in their lives.",
-    mockupImage: "/images/reawakened-by-fire-mockup.png",
-    coverImage: "/images/reawakened-by-fire.png",
+    mockupImage: "/images/reawakened-by-fire-mockup.webp",
+    coverImage: "/images/reawakened-by-fire.webp",
   },
 ];
 
@@ -65,9 +65,9 @@ const BooksPage = () => {
         <meta name="description" content="Explore our collection of faith-rooted books by Ransom John Usoko. Transform your life with wisdom on relationships, faith, and personal growth." />
         <meta property="og:title" content="Books | EL-Ran Transformational Rendezvous" />
         <meta property="og:description" content="Explore our collection of faith-rooted books by Ransom John Usoko. Transform your life with wisdom on relationships, faith, and personal growth." />
-        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:image" content="/images/og-image.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/images/og-image.png" />
+        <meta name="twitter:image" content="/images/og-image.webp" />
       </Head>
 
       <main className="w-full min-h-screen bg-[#FCFAFF]">

@@ -14,9 +14,9 @@ export default function About() {
         />
         <meta property="og:title" content="About Us | EL-RAN Transformational Rendezvous" />
         <meta property="og:description" content="Learn more about EL-RAN Transformational Rendezvous and our mission to steward growth with integrity, intention, and faith." />
-        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:image" content="/images/og-image.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/images/og-image.png" />
+        <meta name="twitter:image" content="/images/og-image.webp" />
       </Head>
 
       <main className="w-full min-h-screen">
@@ -24,7 +24,7 @@ export default function About() {
         <div className="relative w-full h-[70vh] md:h-[100vh] flex items-center justify-center overflow-hidden mt-16 md:mt-20">
           <div className="absolute inset-0 w-full h-full">
              <Image 
-                src="/images/about-hero.png" 
+                src="/images/about-hero.webp" 
                 alt="About El-Ran Hero" 
                 fill
                 className="object-cover object-top"
@@ -73,7 +73,7 @@ export default function About() {
                         {/* Image 1: Back (Top Left) - Smaller on mobile */}
                         <div className="absolute top-0 left-0 w-[160px] md:w-[350px] h-[200px] md:h-[450px] z-20 shadow-xl rounded-xl overflow-hidden border-4 border-[#F9F5FF] -rotate-3 transition-transform duration-500 group-hover:rotate-0 group-hover:scale-105">
                              <Image 
-                                src="/images/about-image-1.png" 
+                                src="/images/about-image-1.webp" 
                                 alt="Ransom John and Wife" 
                                 fill
                                 className="object-cover"
@@ -83,7 +83,7 @@ export default function About() {
                         {/* Image 2: Front (Bottom Right) - Smaller on mobile */}
                         <div className="absolute bottom-0 right-0 w-[140px] md:w-[280px] h-[180px] md:h-[350px] z-30 shadow-2xl rounded-xl overflow-hidden border-4 border-[#F9F5FF] rotate-3 transition-transform duration-500 group-hover:rotate-0 group-hover:scale-105 delay-100">
                              <Image 
-                                src="/images/about-image-2.png" 
+                                src="/images/about-image-2.webp" 
                                 alt="Ransom John Couple Portrait" 
                                 fill
                                 className="object-cover"
@@ -114,7 +114,7 @@ export default function About() {
                     {/* Image */}
                     <div className="relative w-[300px] md:w-[400px] aspect-[4/5] rounded overflow-hidden shadow-none mt-12 ml-12 z-10">
                         <Image 
-                           src="/images/about-image-3.png" 
+                           src="/images/about-image-3.webp" 
                            alt="Ransom John Portrait" 
                            fill
                            className="object-cover"

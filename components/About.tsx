@@ -11,7 +11,7 @@ const About = () => {
         {/* Left Image Section (40%) */}
         <div className="w-full md:w-[40%] flex justify-start h-[400px] md:h-[550px] relative">
              <img 
-                src="/images/ransom-john-about.png" 
+                src="/images/ransom-john-about.webp" 
                 alt="About Ransom John" 
                 className="w-full h-full object-cover object-bottom rounded-tl-[8rem] rounded-br-[5rem]"
              />

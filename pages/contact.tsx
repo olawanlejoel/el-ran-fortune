@@ -51,9 +51,9 @@ export default function Contact() {
         />
         <meta property="og:title" content="Contact Us | EL-RAN Transformational Rendezvous" />
         <meta property="og:description" content="Get in touch with EL-RAN Transformational Rendezvous for enquiries, collaborations, or program information." />
-        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:image" content="/images/og-image.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/images/og-image.png" />
+        <meta name="twitter:image" content="/images/og-image.webp" />
       </Head>
 
       <main className="w-full">
