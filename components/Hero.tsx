@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -26,12 +27,16 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          <button className="px-6 py-2.5 bg-primary text-white rounded-xl font-medium text-sm hover:opacity-90 transition-all shadow-md hover:shadow-lg">
-            Explore our Library
-          </button>
-          <button className="px-6 py-2.5 bg-transparent text-primary border border-primary/20 rounded-xl font-medium text-sm hover:bg-primary/5 transition-all">
-            Explore our Vision
-          </button>
+          <Link href="/books">
+            <button className="px-6 py-2.5 bg-primary text-white rounded-xl font-medium text-sm hover:opacity-90 transition-all shadow-md hover:shadow-lg">
+              Explore our Library
+            </button>
+          </Link>
+          <Link href="/about#vision">
+            <button className="px-6 py-2.5 bg-transparent text-primary border border-primary/20 rounded-xl font-medium text-sm hover:bg-primary/5 transition-all">
+              Explore our Vision
+            </button>
+          </Link>
         </div>
       </div>
 

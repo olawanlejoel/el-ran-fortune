@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "@/components/Banner";
@@ -133,9 +134,11 @@ export default function About() {
                         <p>You will find out when you buy my books.</p>
                     </div>
 
-                    <button className="px-8 py-3 bg-[#3F2139] text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg active:scale-95 text-sm">
-                        Buy Now!!
-                    </button>
+                    <Link href="/books">
+                        <button className="px-8 py-3 bg-[#3F2139] text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg active:scale-95 text-sm">
+                            Buy Now!!
+                        </button>
+                    </Link>
                 </div>
              </div>
 
@@ -144,7 +147,7 @@ export default function About() {
         </section>
 
         {/* Mission & Vision Section */}
-        <section className="bg-white py-24 px-6 md:px-16">
+        <section id="vision" className="bg-white py-24 px-6 md:px-16">
             <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
                 
                 {/* Mission Card */}

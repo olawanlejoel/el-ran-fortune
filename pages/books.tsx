@@ -128,22 +128,32 @@ const BooksPage = () => {
                 </div>
               </div>
               
-              {/* Right: Book Mockup Image with Glow */}
+              {/* Right: Book Mockup Image with Sleek Cylindrical Base */}
               <div className="w-full lg:w-1/2 flex justify-center lg:justify-end order-1 lg:order-2">
                 <div 
                   key={`img-${activeBook.id}`}
-                  className="relative w-[260px] md:w-[380px] h-[320px] md:h-[480px] animate-slideIn"
+                  className="relative w-[260px] md:w-[380px] h-[320px] md:h-[480px] animate-slideIn flex flex-col items-center justify-end"
                 >
-                  {/* Soft Glow Behind Image */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#CA356A]/20 to-[#3F2139]/20 rounded-3xl blur-3xl scale-90 -z-10"></div>
+                  {/* Book Image */}
+                  <div className="relative w-full h-[280px] md:h-[420px] mb-2">
+                    <Image
+                      src={activeBook.mockupImage}
+                      alt={activeBook.title}
+                      fill
+                      className="object-contain drop-shadow-[0_20px_50px_rgba(63,33,57,0.25)] transition-all duration-700"
+                      priority
+                    />
+                  </div>
                   
-                  <Image
-                    src={activeBook.mockupImage}
-                    alt={activeBook.title}
-                    fill
-                    className="object-contain drop-shadow-[0_20px_50px_rgba(63,33,57,0.25)] transition-all duration-700"
-                    priority
-                  />
+                  {/* Sleek Cylindrical Base - Layered Ellipses */}
+                  <div className="relative w-[180px] md:w-[240px]">
+                    {/* Top surface of cylinder */}
+                    <div className="w-full h-[12px] md:h-[16px] bg-gradient-to-b from-[#D4B8D0] to-[#C9A8C5] rounded-[50%]"></div>
+                    {/* Body/side of cylinder */}
+                    <div className="w-full h-[8px] md:h-[10px] bg-gradient-to-b from-[#C9A8C5] to-[#B89AB3] -mt-[6px] md:-mt-[8px]"></div>
+                    {/* Bottom edge with shadow */}
+                    <div className="w-full h-[6px] md:h-[8px] bg-[#A88AA0] rounded-b-[50%] -mt-[1px] shadow-[0_4px_12px_rgba(63,33,57,0.15)]"></div>
+                  </div>
                 </div>
               </div>
             </div>
