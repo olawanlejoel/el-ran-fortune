@@ -12,7 +12,19 @@ const reviews = [
   {
     id: 2,
     text: "I would start by saying that I am not really good at reading non academic books apart from novels, but Reawakened by Fire had me hooked because it answered the questions I had. The book has the breath of the Holy Spirit in it and I recommend it to anyone who like me is tired of the status quo and would love to ignite and sustain the fire of God.",
-    name: "Anonymous",
+    name: "Mmesoma",
+    image: "/images/anonymous-user.webp",
+  },
+  {
+    id: 3,
+    text: "My heart is very heavy and I've been crying and praying every now and then!!😭 I can literally feel the fire of the Holy Spirit afresh in my body like I just gave my life to Christ!!🔥 Buying 'Reawakened by Fire' is the best decision I took before going to school!!",
+    name: "Chioma",
+    image: "/images/anonymous-user.webp",
+  },
+  {
+    id: 4,
+    text: "I’ve read books on healthy relationships but none was this relatable. What struck me most was how deeply African yet richly scriptural this book is... I’ve truly learnt that knowing when to say 'NO' is a mark of true spiritual maturity.",
+    name: "Williams Idoko",
     image: "/images/anonymous-user.webp",
   },
 ];
