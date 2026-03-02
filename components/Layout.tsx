@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import PromoModal from './PromoModal';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </main>
       <Footer />
+      <PromoModal />
     </div>
   );
 };
