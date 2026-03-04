@@ -4,7 +4,7 @@ import Image from 'next/image';
 const STORAGE_KEY = 'el_ran_promo_last_shown';
 // Re-show modal every 24 hours so it doesn't become annoying
 const RESSHOW_INTERVAL_MS = 24 * 60 * 60 * 1000;
-const DELAY_MS = 60 * 1000; // 1 minute
+const DELAY_MS = 5 * 1000; // 5 seconds
 
 export default function PromoModal() {
   const [visible, setVisible] = useState(false);
