@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </main>
       <Footer />
-      <PromoModal />
+      {/* <PromoModal /> */}
     </div>
   );
 };
