@@ -6,6 +6,7 @@ import Books from "@/components/Books";
 import FeaturedBooks from "@/components/FeaturedBooks";
 import BookReviews from "@/components/BookReviews";
 import Banner from "@/components/Banner";
+import PurposeAcademyCard from "@/components/PurposeAcademyCard";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
@@ -54,6 +55,10 @@ export default function Home() {
         {/* <ScrollReveal>
           <Books />
         </ScrollReveal> */}
+
+        <ScrollReveal>
+          <PurposeAcademyCard />
+        </ScrollReveal>
         
         <ScrollReveal>
           <FeaturedBooks />

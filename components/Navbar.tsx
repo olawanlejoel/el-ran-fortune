@@ -74,6 +74,7 @@ const Navbar = () => {
           <NavLink href="/about" text="About" isActive={router.pathname === '/about'} />
           <NavLink href="/books" text="Books" isActive={router.pathname === '/books'} />
           <NavLink href="/contact" text="Contact" isActive={router.pathname === '/contact'} />
+          <NavLink href="/purpose-academy" text="Academy" isActive={router.pathname === '/purpose-academy'} />
         </div>
 
         {/* Desktop Button */}
@@ -113,6 +114,7 @@ const Navbar = () => {
                         { name: 'Home', href: '/' },
                         { name: 'About', href: '/about' },
                         { name: 'Books', href: '/books' },
+                        { name: 'Academy', href: '/purpose-academy' },
                         { name: 'Contact', href: '/contact' }
                     ].map((item, index) => (
                         <motion.div
